@@ -8,7 +8,7 @@ import (
 func main() {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", func(writer http.ResponseWriter, request *http.Request) {
-		writer.Write([]byte("Hello Wold"))
+		writer.Write([]byte("Halo Dunia"))
 	})
 
 	err := http.ListenAndServe(":3000", mux)
